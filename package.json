@@ -28,7 +28,9 @@
   "homepage": "https://github.com/marciosmelo/entria-backend#readme",
   "dependencies": {
     "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
     "mongoose": "^5.5.2",
     "nodemon": "^1.18.11"
-  }
+  },
+  "devDependencies": {}
 }
