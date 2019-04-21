@@ -21,15 +21,15 @@ db.once('open', function() {
     var inception = new Movie({name: 'Inception', stars: 5});
     var avengers = new Movie({name: 'Avengers', stars: 3});
 
-    // inception.save(function (err, fluffy) {
-    //     if (err) return console.error(err);
-    //     inception.rating();
-    // });
+    inception.save(function (err, fluffy) {
+        if (err) return console.error(err);
+        inception.rating();
+    });
 
-    // avengers.save(function(err, avengers) {
-    //     if (err) return console.error(err);
-    //     avengers.rating();
-    // })
+    avengers.save(function(err, avengers) {
+        if (err) return console.error(err);
+        avengers.rating();
+    })
 
     Movie.find(function (err, movies) {
         if (err) return console.error(err);
