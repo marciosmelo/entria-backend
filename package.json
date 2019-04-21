@@ -1,0 +1,33 @@
+{
+  "name": "entria-backend",
+  "version": "1.0.0",
+  "description": "Entria Backend Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciosmelo/entria-backend.git"
+  },
+  "keywords": [
+    "backend",
+    "node",
+    "koajs",
+    "rest",
+    "crud",
+    "entria",
+    "jest"
+  ],
+  "author": "@marciosmelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciosmelo/entria-backend/issues"
+  },
+  "homepage": "https://github.com/marciosmelo/entria-backend#readme",
+  "dependencies": {
+    "mongoose": "^5.5.2",
+    "nodemon": "^1.18.11"
+  }
+}
