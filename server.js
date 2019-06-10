@@ -10,16 +10,23 @@ const handleError = require('koa-handle-error')
 const movie = require('./controller/movieController')
 
 //Mongoose Config
-mongoose.Promise = require('bluebird')
 mongoose
-.connect('mongodb://localhost:4000', {useNewUrlParser: true})
-.then((response) => {
-    console.log('mongo connection success')
-})
-.catch((err) => {
-    console.log("Error connecting to Mongo")
-    console.log(err);
-});
+  .connect(
+    'mongodb://localhost/movies',
+    { useNewUrlParser: true }
+  )
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
+// mongoose.Promise = require('bluebird')
+// mongoose
+// .connect('mongodb://localhost/test', {useNewUrlParser: true})
+// .then((response) => {
+//     console.log('mongo connection success')
+// })
+// .catch((err) => {
+//     console.log("Error connecting to Mongo")
+//     console.log(err);
+// });
 
 const app = new Koa();
 
